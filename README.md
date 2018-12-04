@@ -2,8 +2,8 @@
 
 ## What is IME?
 
-IME is Input Method Editor, that is text conversion software for Asian Windows users.
-IME allows the Asian users to input Asian text.
+IME is Input Method Editor, that is text conversion software for Far East Asian Windows users.
+IME allows the Far East Asian users to input Far East Asian text.
 
 The body of an IME is a DLL file that is registered as an IME in the operating system.
 An IME can provide the functions whose names begin with `"Ime"`, and `NotifyIME` function. For more details, see IME Hackerz.
@@ -43,6 +43,24 @@ Chinese people uses Chinese keyboards.
 Korean people uses Korean keyboards.
 Japanese user doesn't want to use English keyboard to input Japanese text.
 
+## What is Chinese?
+
+That is Asian people and/or languages, that is mainly living in the continent of Far East.
+They are great. They built Great Wall. Anyway they are so great.
+Many Chinese are not Japanese nor Korean.
+
+## What is Japanese?
+
+That is Asian people and/or languages, that is mainly living in the islands of Far East.
+They are small but built an empire and had invaded the Asian countries.
+Many Japanese are not Chinese nor Korean.
+
+## What is Korean?
+
+That is Asian people and/or language in the peninsula of Far East.
+They likes Kimchi. They are promoting K-POP.
+Many Korean are not Chinese nor Japanese.
+
 ## What is Zenkaku or Hankaku?
 
 A Hankaku (半角) character is a single-byte character.
@@ -52,28 +70,28 @@ A Japanese fixed-width font should follow this traditional rule.
 
 ## What is Hiragana and Katakana?
 
-- Hiragana is a Japanese phonetic character collection (like あいうえお etc.).
-- Katakana is a Japanese phonetic character collection (like アイウエオ etc.).
+- Hiragana (ひらがな) is a Japanese phonetic character collection (like あいうえお etc.).
+- Katakana (カタカナ) is a Japanese phonetic character collection (like アイウエオ etc.).
 
 ## What is Kana?
 
-Kana is Hiragana and/or Katakana.
+Kana (かな/カナ) is Hiragana and/or Katakana.
 
 ## What is Kanji?
 
-The Kanji characters in Japanese originate on the Chinese characters (like 亜阿唖).
+The Kanji (漢字) characters in Japanese originate on the Chinese characters (like 亜阿唖).
 
 ## What is Kanji radical?
 
-The Kanji radical is a systematic component of the Chinese character (or a Kanji character).
+The Kanji radical (部首) is a systematic component of the Chinese character (or a Kanji character).
 
 ## What is Romaji conversion?
 
-Romaji conversion is a translation from English alphabet text into Kana character text.
+Romaji conversion (ローマ字変換) is a translation from English alphabet text into Kana character text.
 
 ## What is Kana-Kanji conversion?
 
-Kana-Kanji conversion is a conversion from Kana text into Kanji or something text.
+Kana-Kanji conversion (かな漢字変換) is a conversion from Kana text into Kanji or something text.
 A normal Japanese keyboard cannot type the Kanji characters directly.
 
 ## How is the Japanese keyboard?
