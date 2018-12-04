@@ -1,48 +1,28 @@
-# FAQ of IME/IMM
+﻿# FAQ of IME/IMM
 
 ## What is IME?
 
 IME is Input Method Editor, that is text conversion software for Asian Windows users.
 IME allows the Asian users to input Asian text.
 
-The Japanese user inputs the Hiragana text into IME (See REF014 and REF015) and converts into Kanji Katakana, or something text by IME.
-Hiragana is a Japanese phonetic character collection.
-The Kanji characters originate on the Chinese characters.
-
-The Chinese user inputs the Kanji radicals into IME.
-The Kanji radical is a component of the Chinese character (or a Kanji character).
-
 The body of an IME is a DLL file that is registered as an IME in the operating system.
-An IME can provide the following functions:
+An IME can provide the functions whose names begin with `"Ime"`, and `NotifyIME` function. For more details, see IME Hackerz.
 
-- ImeConfigure function
-- ImeConversionList function
-- ImeDestroy function
-- ImeEnumRegisterWord function
-- ImeEscape function
-- ImeGetImeMenuItems function
-- ImeGetRegisterWordStyle function
-- ImeInquire function
-- ImeProcessKey function
-- ImeRegisterWord function
-- ImeSelect function
-- ImeSetActiveContext function
-- ImeSetCompositionString function
-- ImeToAsciiEx function
-- ImeUnregisterWord function
-- NotifyIME function
+Usually, the IME software has to provide its IME installer to register itself into the system.
+
+For more details, see IME Hackerz.
 
 ## What is IMM?
 
-IMM is Input Method Manager  for Windows, that manages the user input and provides the interface between the user and an IME software.
+IMM is Input Method Manager for Windows, that provides the interface between the user and an IME software.
 
 ## What is IMM32?
 
-IMM32 is 32-bit IMM for Windows. That is a DLL file that is located in C:\Windows\system32 as the name of "imm32.dll".
+IMM32 is 32-bit IMM for Windows. That is a DLL file that is located in `C:\Windows\system32` as the name of "imm32.dll".
 
-IMM32 provides API functions whose names begin with "Imm". For more details, see IME Hackerz (REF011 and REF012).
+IMM32 provides API functions whose names begin with `"Imm"`. For more details, see IME Hackerz (REF011 and REF012).
 
-## How to use IMM32?
+## How to use IMM32 in my program?
 
 Just include <imm.h> and link to imm32.dll as follows:
 
@@ -63,16 +43,42 @@ The position of the physical key may change.
 Also, the key code mapping may change.
 
 Usually, Japanese people uses Japanese keyboards.
-Usually, Chinese people uses Chinese keyboards.
-Usually, Korean people uses Korean keyboards.
+Chinese people uses Chinese keyboards.
+Korean people uses Korean keyboards.
 Japanese user doesn't want to use English keyboard to input Japanese text.
 
-## What is Zenkaku or Hankaku character?
+## What is Zenkaku or Hankaku?
 
 A Hankaku character is a single-byte character.
 A non-Hankaku character is a Zenkaku character.
 Traditionally, a non-single-byte character (in Shift_JIS encoding) has double width of a Hankaku character.
 A Japanese fixed-width font should follow this traditional rule.
+
+## What is Hiragana and Katakana?
+
+Hiragana is a Japanese phonetic character collection (like あいうえお etc.).
+Katakana is a Japanese phonetic character collection (like アイウエオ etc.).
+
+## What is Kana?
+
+Kana is Hiragana and/or Katakana.
+
+## What is Kanji?
+
+The Kanji characters originate on the Chinese characters (like 亜阿唖).
+
+## What is Kanji radical?
+
+The Kanji radical is a component of the Chinese character (or a Kanji character).
+
+## What is Romaji conversion?
+
+Romaji conversion is a translation from English alphabet text into Kana character text.
+
+## What is Kana-Kanji conversion?
+
+Kana-Kanji conversion is a conversion from Kana text into Kanji or something text.
+A normal Japanese keyboard cannot type the Kanji characters directly.
 
 ## How is the Japanese keyboard?
 
@@ -80,17 +86,34 @@ The current Japanese keyboard standard is 109-keyboard.
 It can type English alphabet and Hiragana characters, and some Japanese symbols and punctuations.
 Additionally it has the VK_KANJI, VK_KANA, VK_CONVERT, and VK_NONCONVERT virtual keys.
 
-- VK_KANJI is Hankaku/Zenkaku key to toggle Hankaku input mode and Zenkaku input mode.
-- VK_KANA is Kana key to begin the Kana (Hiragana and Katakana) input or toggle the Hiragana mode and the Katakana mode.
-- VK_CONVERT is Convert key to convert the text.
-- VK_NONCONVERT is Non-Convert key to revert conversion.
+- VK_KANJI (半角／全角) key is Hankaku/Zenkaku key to toggle Hankaku input mode and Zenkaku input mode.
+- VK_KANA (かな) key is Kana key to begin the Kana (Hiragana and Katakana) input or toggle the Hiragana mode and the Katakana mode. These two modes are exclusive.
+- VK_CONVERT (変換) is Convert key to convert the text.
+- VK_NONCONVERT (無変換) is Non-Convert key to revert conversion.
 
 Some punctuation key mapping differs from English key mapping.
 
-There is Romaji input mode and Kana input mode. These modes are exclusive.
-You can toggle these modes by Alt+Kana key.
+## How is the Chinese keyboard?
+
+It can type English alphabet and the Chinese radicals.
+
+## How is the Korean keyboard?
+
+It can type English alphabet and the Hangul radicals.
+Additionally, it has VK_HANGUL, VK_JUNJA and VK_HANJA virtual keys.
+
+- VK_HANGUL is the Hangul input mode key (same as VK_KANA).
+- VK_JUNJA is the Junja mode key.
+- VK_HANJA is the Hanja mode key.
+
+## How to input Japanese text?
+
+A normal Japanese keyboard cannot type the Kanji characters directly.
+The Japanese user inputs the Hiragana text (or Romaji-converted text) into IME and converts into Kanji or something text by the IME.
+
+There is Romaji input mode and Kana input mode. These modes are exclusive. You can toggle these modes by Alt+Kana key.
 In Romaji input mode, typing Alphabet key makes translation from English Alphabet to Kana.
-In Kana input mode, typing Hiragana key makes Hiragana character input.
+In Kana input mode, typing actual Hiragana key makes Hiragana character input.
 
 To enter Japanese text at first, press Alt+VK_KANJI (or simply VK_KANJI in new Windows).
 It enables Zenkaku mode. Pressing Alt+VK_KANJI again, it disables Zenkaku mode.
@@ -102,16 +125,7 @@ Pressing space or VK_CONVERT key again makes next conversion (it might show the 
 Pressing Enter key commits the conversion text and that the selected candidate text will be actually entered text box.
 Esc key in Zenkaku mode makes cancellation of conversion.
 
-## How is the Chinese keyboard?
+## How to input Chinese text?
 
-It can type English alphabet and the Chinese radicals.
-I don't know well.
-
-## How is the Korean keyboard?
-
-It can type English alphabet and the Hangul radicals.
-Additionally, it has VK_HANGUL, VK_JUNJA and VK_HANJA virtual keys.
-
-- VK_HANGUL is the Hangul input mode key (same as VK_KANA).
-- VK_JUNJA is the Junja mode key.
-- VK_HANJA is the Hanja mode key.
+The Chinese user enters the Kanji radicals into IME.
+The IME in Kanji mode automatically converts them into Kanji characters.
