@@ -46,23 +46,26 @@ Japanese user doesn't want to use English keyboard to input Japanese text.
 ## What is Chinese?
 
 That is Asian people and/or languages, that is mainly living in the continent of Far East.
-They are great. They built Great Wall. Anyway they are so great. The center of world industry.
 They use Chinese characters.
 Many Chinese are not Japanese nor Korean.
+
+See also REF020.
 
 ## What is Japanese?
 
 That is Asian people and/or languages, that is mainly living in the islands of Far East.
-They are small but built an empire and had invaded the Asian countries. They are falling down.
 They use Hiragana, Katakana, Kanji and English characters.
 Many Japanese are not Chinese nor Korean.
 
+See also REF021.
+
 ## What is Korean?
 
-That is Asian people and/or language in the peninsula of Far East.
-They likes Kimchi. Kim Jong-Un is famous in the peninsula. They are promoting K-POP.
+That is Asian people and/or language, that is mainly living in the peninsula of Far East.
 They use Hangul characters (like 김정은) and English characters.
 Many Korean are not Chinese nor Japanese.
+
+See also REF022.
 
 ## What is Zenkaku or Hankaku?
 
@@ -174,3 +177,6 @@ See `mzimeja`.
 - REF017: Wikipedia: Kanji: https://en.wikipedia.org/wiki/IME
 - REF018: Wikipedia: Input method: https://en.wikipedia.org/wiki/Input_method
 - REF019: Wikipedia: Keyboard layout: https://en.wikipedia.org/wiki/Keyboard_layout
+- REF020: Wikipedia: Chinese language: https://en.wikipedia.org/wiki/Chinese_language
+- REF021: Wikipedia: Japanese language: https://en.wikipedia.org/wiki/Japanese_language
+- REF022: Wikipedia: Korean language: https://en.wikipedia.org/wiki/Korean_language
