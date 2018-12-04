@@ -61,7 +61,7 @@ Many Japanese are not Chinese nor Korean.
 
 That is Asian people and/or language in the peninsula of Far East.
 They likes Kimchi. Kim Jong-Un is famous in the peninsula. They are promoting K-POP.
-They use Hangul characters and English characters.
+They use Hangul characters (like 김정은) and English characters.
 Many Korean are not Chinese nor Japanese.
 
 ## What is Zenkaku or Hankaku?
