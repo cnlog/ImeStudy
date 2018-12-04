@@ -60,7 +60,7 @@ Many Japanese are not Chinese nor Korean.
 ## What is Korean?
 
 That is Asian people and/or language in the peninsula of Far East.
-They likes Kimchi. They are promoting K-POP.
+They likes Kimchi. Kim Jong-Un is famous in the peninsula. They are promoting K-POP.
 They use Hangul characters and English characters.
 Many Korean are not Chinese nor Japanese.
 
@@ -139,7 +139,7 @@ Pressing `Alt+VK_KANJI` again, it disables Zenkaku mode and "A" will be displaye
 In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text (indeterminated composition text).
 Then `Space` key or `VK_CONVERT` key makes Kana-Kanji conversion of that text.
 Then the conversion candidates will be displayed with highlighted text.
-Pressing `Space` or `VK_CONVERT` key again makes next conversion (it might show the list of the candidates).
+Pressing `Space` or `VK_CONVERT` key again makes next Kana-Kanji conversion (it might show the list of the candidates).
 Pressing `Enter` key commits the conversion text and that the selected candidate text will be actually entered the text box.
 `Esc` key in Zenkaku mode makes cancellation of conversion.
 
