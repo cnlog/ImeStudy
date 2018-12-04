@@ -40,69 +40,7 @@ IMM is Input Method Manager  for Windows, that manages the user input and provid
 
 IMM32 is 32-bit IMM for Windows. That is a DLL file that is located in C:\Windows\system32 as the name of "imm32.dll".
 
-IMM32 provides the following API functions:
-
-- ImmAssociateContext function
-- ImmAssociateContextEx function
-- ImmConfigureIME function
-- ImmCreateContext function
-- ImmCreateIMCC function
-- ImmCreateSoftKeyboard function
-- ImmDestroyContext function
-- ImmDestroyIMCC function
-- ImmDestroySoftKeyboard function
-- ImmDisableIME function
-- ImmDisableLegacyIME function
-- ImmEnumInputContext function
-- ImmEnumRegisterWord function
-- ImmEscape function
-- ImmGenerateMessage function
-- ImmGetCandidateList function
-- ImmGetCandidateListCount function
-- ImmGetCandidateWindow function
-- ImmGetCompositionFont function
-- ImmGetCompositionString function
-- ImmGetCompositionWindow function
-- ImmGetContext function
-- ImmGetConversionList function
-- ImmGetConversionStatus function
-- ImmGetDefaultIMEWnd function
-- ImmGetDescription function
-- ImmGetGuideLine function
-- ImmGetHotKey function
-- ImmGetIMCCLockCount function
-- ImmGetIMCCSize function
-- ImmGetIMCLockCount function
-- ImmGetIMEFileName function
-- ImmGetImeMenuItems function
-- ImmGetOpenStatus function
-- ImmGetProperty function
-- ImmGetRegisterWordStyle function
-- ImmGetStatusWindowPos function
-- ImmGetVirtualKey function
-- ImmInstallIME function
-- ImmIsIME function
-- ImmIsUIMessage function
-- ImmLockIMC function
-- ImmLockIMCC function
-- ImmNotifyIME function
-- ImmRegisterWord function
-- ImmReleaseContext function
-- ImmRequestMessage function
-- ImmReSizeIMCC function
-- ImmSetCandidateWindow function
-- ImmSetCompositionFont function
-- ImmSetCompositionString function
-- ImmSetCompositionWindow function
-- ImmSetConversionStatus function
-- ImmSetHotKey function
-- ImmSetOpenStatus function
-- ImmSetStatusWindowPos function
-- ImmShowSoftKeyboard function
-- ImmSimulateHotKey function
-- ImmUnlockIMC function
-- ImmUnlockIMCC function
-- ImmUnregisterWord function
+IMM32 provides API functions whose names begin with "Imm". For more details, see IME Hackerz (REF011 and REF012).
 
 ## How to use IMM32?
 
@@ -120,4 +58,60 @@ See REF013.
 
 ## What is "keyboard layout"?
 
-See REF019.
+The key code system differs depending on the keyboard or the keyboard language.
+The position of the physical key may change.
+Also, the key code mapping may change.
+
+Usually, Japanese people uses Japanese keyboards.
+Usually, Chinese people uses Chinese keyboards.
+Usually, Korean people uses Korean keyboards.
+Japanese user doesn't want to use English keyboard to input Japanese text.
+
+## What is Zenkaku or Hankaku character?
+
+A Hankaku character is a single-byte character.
+A non-Hankaku character is a Zenkaku character.
+Traditionally, a non-single-byte character (in Shift_JIS encoding) has double width of a Hankaku character.
+A Japanese fixed-width font should follow this traditional rule.
+
+## How is the Japanese keyboard?
+
+The current Japanese keyboard standard is 109-keyboard.
+It can type English alphabet and Hiragana characters, and some Japanese symbols and punctuations.
+Additionally it has the VK_KANJI, VK_KANA, VK_CONVERT, and VK_NONCONVERT virtual keys.
+
+- VK_KANJI is Hankaku/Zenkaku key to toggle Hankaku input mode and Zenkaku input mode.
+- VK_KANA is Kana key to begin the Kana (Hiragana and Katakana) input.
+- VK_CONVERT is Convert key to convert the text.
+- VK_NONCONVERT is Non-Convert key to revert conversion.
+
+Some punctuation key mapping differs from English key mapping.
+
+There is Romaji input mode and Kana input mode. These modes are exclusive.
+You can toggle these modes by Alt+Kana key.
+In Romaji input mode, typing Alphabet key makes translation from English Alphabet to Kana.
+In Kana input mode, typing Hiragana key makes Hiragana character input.
+
+To enter Japanese text at first, press Alt+VK_KANJI (or simply VK_KANJI in new Windows).
+It enables Zenkaku mode. Pressing Alt+VK_KANJI again, it disables Zenkaku mode.
+
+In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text.
+Space key or VK_CONVERT key makes Kana-Kanji conversion.
+The conversion candidates will be displayed with highlighten text (composition text).
+Pressing space or VK_CONVERT key again makes next conversion.
+Pressing Enter key commits the conversion text and that text will be entered text box.
+Esc key in Zenkaku mode makes cancellation of conversion.
+
+## How is the Chinese keyboard?
+
+It can type English alphabet and the Chinese radicals.
+I don't know well.
+
+## How is the Korean keyboard?
+
+It can type English alphabet and the Hangul radicals.
+Additionally, it has VK_HANGUL, VK_JUNJA and VK_HANJA virtual keys.
+
+- VK_HANGUL is the Hangul input mode key (same as VK_KANA).
+- VK_JUNJA is the Junja mode key.
+- VK_HANJA is the Hanja mode key.
