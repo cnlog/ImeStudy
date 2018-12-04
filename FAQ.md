@@ -24,7 +24,7 @@ IMM32 provides API functions whose names begin with `"Imm"`. For more details, s
 
 ## How to use IMM32 in my program?
 
-Just include <imm.h> and link to imm32.dll as follows:
+Just include `<imm.h>` and link to imm32.dll as follows:
 
 ```c
 #include <windows.h>
@@ -46,7 +46,7 @@ Japanese user doesn't want to use English keyboard to input Japanese text.
 ## What is Zenkaku or Hankaku?
 
 A Hankaku (半角) character is a single-byte character.
-A non-Hankaku character is a Zenkaku (全角) character.
+A non-Hankaku character is a Zenkaku (全角) character (in Traditional Japanese).
 Traditionally, a non-single-byte character (in Shift_JIS encoding) has double width of a Hankaku character.
 A Japanese fixed-width font should follow this traditional rule.
 
@@ -65,7 +65,7 @@ The Kanji characters in Japanese originate on the Chinese characters (like 亜�
 
 ## What is Kanji radical?
 
-The Kanji radical is a component of the Chinese character (or a Kanji character).
+The Kanji radical is a systematic component of the Chinese character (or a Kanji character).
 
 ## What is Romaji conversion?
 
@@ -107,18 +107,19 @@ Additionally, it has `VK_HANGUL`, `VK_JUNJA` and `VK_HANJA` virtual keys.
 A normal Japanese keyboard cannot type the Kanji characters directly.
 The Japanese user inputs the Hiragana text (or Romaji-converted text) into IME and converts into Kanji or something text by the IME.
 
-There is Romaji input mode and Kana input mode. These modes are exclusive. You can toggle these modes by `Alt`+`Kana` key.
+There is Romaji input mode and Kana input mode. These modes are exclusive. You can toggle these modes by `Alt+Kana` key.
 In Romaji input mode, typing Alphabet key makes translation from English Alphabet to Kana.
 In Kana input mode, typing actual Hiragana key makes Hiragana character input.
 
-To begin Japanese text, press `Alt`+`VK_KANJI` (or simply `VK_KANJI` in new Windows).
-It enables Zenkaku mode. Pressing `Alt`+`VK_KANJI` again, it disables Zenkaku mode.
+To begin Japanese text, press `Alt+VK_KANJI` (or simply `VK_KANJI` in new Windows).
+It enables Zenkaku mode and "あ" will be displayed on Taskbar or IME bar.
+Pressing `Alt+VK_KANJI` again, it disables Zenkaku mode and "A" will be displayed on Taskbar or IME bar (Hankaku mode).
 
 In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text (indeterminated composition text).
 Then `Space` key or `VK_CONVERT` key makes Kana-Kanji conversion of that text.
 The conversion candidates will be displayed with highlighted text.
 Pressing `Space` or `VK_CONVERT` key again makes next conversion (it might show the list of the candidates).
-Pressing `Enter` key commits the conversion text and that the selected candidate text will be actually entered text box.
+Pressing `Enter` key commits the conversion text and that the selected candidate text will be actually entered the text box.
 `Esc` key in Zenkaku mode makes cancellation of conversion.
 
 ## How to input Chinese text?
