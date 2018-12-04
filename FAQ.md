@@ -81,7 +81,7 @@ It can type English alphabet and Hiragana characters, and some Japanese symbols 
 Additionally it has the VK_KANJI, VK_KANA, VK_CONVERT, and VK_NONCONVERT virtual keys.
 
 - VK_KANJI is Hankaku/Zenkaku key to toggle Hankaku input mode and Zenkaku input mode.
-- VK_KANA is Kana key to begin the Kana (Hiragana and Katakana) input.
+- VK_KANA is Kana key to begin the Kana (Hiragana and Katakana) input or toggle the Hiragana mode and the Katakana mode.
 - VK_CONVERT is Convert key to convert the text.
 - VK_NONCONVERT is Non-Convert key to revert conversion.
 
@@ -95,11 +95,11 @@ In Kana input mode, typing Hiragana key makes Hiragana character input.
 To enter Japanese text at first, press Alt+VK_KANJI (or simply VK_KANJI in new Windows).
 It enables Zenkaku mode. Pressing Alt+VK_KANJI again, it disables Zenkaku mode.
 
-In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text.
-Space key or VK_CONVERT key makes Kana-Kanji conversion.
-The conversion candidates will be displayed with highlighten text (composition text).
-Pressing space or VK_CONVERT key again makes next conversion.
-Pressing Enter key commits the conversion text and that text will be entered text box.
+In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text (indeterminated composition text).
+Then Space key or VK_CONVERT key makes Kana-Kanji conversion.
+The conversion candidates will be displayed with highlighten text.
+Pressing space or VK_CONVERT key again makes next conversion (it might show the list of the candidates).
+Pressing Enter key commits the conversion text and that the selected candidate text will be actually entered text box.
 Esc key in Zenkaku mode makes cancellation of conversion.
 
 ## How is the Chinese keyboard?
