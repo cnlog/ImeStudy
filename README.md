@@ -107,7 +107,7 @@ Additionally, it has `VK_HANGUL`, `VK_JUNJA` and `VK_HANJA` virtual keys.
 A normal Japanese keyboard cannot type the Kanji characters directly.
 The Japanese user inputs the Hiragana text (or Romaji-converted text) into IME and converts into Kanji or something text by the IME.
 
-There is Romaji input mode and Kana input mode. These modes are exclusive. You can toggle these modes by `Alt+Kana` key.
+There is Romaji input mode and Kana input mode. These modes are exclusive. You can toggle these modes by `Alt+VK_KANA` key.
 In Romaji input mode, typing Alphabet key makes translation from English Alphabet to Kana.
 In Kana input mode, typing actual Hiragana key makes Hiragana character input.
 
@@ -117,7 +117,7 @@ Pressing `Alt+VK_KANJI` again, it disables Zenkaku mode and "A" will be displaye
 
 In Zenkaku mode, the Zenkaku characters that the user typed is displayed with underlined text (indeterminated composition text).
 Then `Space` key or `VK_CONVERT` key makes Kana-Kanji conversion of that text.
-The conversion candidates will be displayed with highlighted text.
+Then the conversion candidates will be displayed with highlighted text.
 Pressing `Space` or `VK_CONVERT` key again makes next conversion (it might show the list of the candidates).
 Pressing `Enter` key commits the conversion text and that the selected candidate text will be actually entered the text box.
 `Esc` key in Zenkaku mode makes cancellation of conversion.
@@ -129,4 +129,27 @@ The IME in Kanji mode automatically converts them into Kanji characters.
 
 ## Where is free Japanese IME?
 
-See REF013.
+See `mzimeja`.
+
+# Reference
+
+- REF000: The Internet Archive: WayBack Machine: https://archive.org/web
+- REF001: WineHQ (free Windows Emulator): https://www.winehq.org
+- REF002: WineHQ Repository: https://github.com/wine-mirror/wine
+- REF003: ReactOS (free Windows-compatible OS): https://www.reactos.org
+- REF004: ReactOS Repository: https://github.com/reactos/reactos
+- REF005: WineHQ IMM32 source: https://github.com/wine-mirror/wine/tree/master/dlls/imm32
+- REF006: WineHQ USER32 source: https://github.com/wine-mirror/wine/tree/master/dlls/user32
+- REF007: ReactOS IMM32 source: https://github.com/reactos/reactos/tree/master/dll/win32/imm32
+- REF008: ReactOS USER32 source: https://github.com/reactos/reactos/tree/master/win32ss/user
+- REF009: Win32 Multilingual IME Application Programming Interface Version 1.41 ([ime-api.pdf](ime-api.pdf))
+- REF010: Win32 Multilingual IME Overview for IME Development Version 1.41 ([ime-overview.pdf](ime-overview.pdf))
+- REF011: IME Hackerz (English): http://www.geocities.jp/katayama_hirofumi_mz/imehackerz/en
+- REF012: IME Hackerz (Japanese): http://www.geocities.jp/katayama_hirofumi_mz/imehackerz/ja
+- REF013: MZ-IME Japanese Input for Windows 2000 (mzimeja): https://github.com/katahiromz/mzimeja
+- REF014: Wikipedia: Hiragana: https://en.wikipedia.org/wiki/Hiragana
+- REF015: Wikipedia: Kanji: https://en.wikipedia.org/wiki/Kanji
+- REF016: Wikipedia: Katakana: https://en.wikipedia.org/wiki/Katakana
+- REF017: Wikipedia: Kanji: https://en.wikipedia.org/wiki/IME
+- REF018: Wikipedia: Input method: https://en.wikipedia.org/wiki/Input_method
+- REF019: Wikipedia: Keyboard layout: https://en.wikipedia.org/wiki/Keyboard_layout
