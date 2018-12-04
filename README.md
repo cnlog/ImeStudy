@@ -1,4 +1,4 @@
-﻿# FAQ of IME/IMM
+﻿# IME/IMM Study
 
 ## What is IME?
 
