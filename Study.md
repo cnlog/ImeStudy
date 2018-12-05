@@ -10,102 +10,102 @@
 
 ## The list of IMM functions?
 
-- ImmAssociateContext function
-- ImmAssociateContextEx function
-- ImmConfigureIME function
-- ImmCreateContext function
-- ImmCreateIMCC function
-- ImmCreateSoftKeyboard function
-- ImmDestroyContext function
-- ImmDestroyIMCC function
-- ImmDestroySoftKeyboard function
-- ImmDisableIME function
-- ImmDisableLegacyIME function
-- ImmDisableTextFrameService function
-- ImmEnumInputContext function
-- ImmEnumRegisterWord function
-- ImmEscape function
-- ImmGenerateMessage function
-- ImmGetCandidateList function
-- ImmGetCandidateListCount function
-- ImmGetCandidateWindow function
-- ImmGetCompositionFont function
-- ImmGetCompositionString function
-- ImmGetCompositionWindow function
-- ImmGetContext function
-- ImmGetConversionList function
-- ImmGetConversionStatus function
-- ImmGetDefaultIMEWnd function
-- ImmGetDescription function
-- ImmGetGuideLine function
-- ImmGetHotKey function
-- ImmGetIMCCLockCount function
-- ImmGetIMCCSize function
-- ImmGetIMCLockCount function
-- ImmGetIMEFileName function
-- ImmGetImeMenuItems function
-- ImmGetOpenStatus function
-- ImmGetProperty function
-- ImmGetRegisterWordStyle function
-- ImmGetStatusWindowPos function
-- ImmGetVirtualKey function
-- ImmInstallIME function
-- ImmIsIME function
-- ImmIsUIMessage function
-- ImmLockIMC function
-- ImmLockIMCC function
-- ImmNotifyIME function
-- ImmRegisterWord function
-- ImmReleaseContext function
-- ImmRequestMessage function
-- ImmReSizeIMCC function
-- ImmSetCandidateWindow function
-- ImmSetCompositionFont function
-- ImmSetCompositionString function
-- ImmSetCompositionWindow function
-- ImmSetConversionStatus function
-- ImmSetHotKey function
-- ImmSetOpenStatus function
-- ImmSetStatusWindowPos function
-- ImmShowSoftKeyboard function
-- ImmSimulateHotKey function
-- ImmUnlockIMC function
-- ImmUnlockIMCC function
-- ImmUnregisterWord function
+- ImmAssociateContext
+- ImmAssociateContextEx
+- ImmConfigureIME
+- ImmCreateContext
+- ImmCreateIMCC
+- ImmCreateSoftKeyboard
+- ImmDestroyContext
+- ImmDestroyIMCC
+- ImmDestroySoftKeyboard
+- ImmDisableIME
+- ImmDisableLegacyIME
+- ImmDisableTextFrameService
+- ImmEnumInputContext
+- ImmEnumRegisterWord
+- ImmEscape
+- ImmGenerateMessage
+- ImmGetCandidateList
+- ImmGetCandidateListCount
+- ImmGetCandidateWindow
+- ImmGetCompositionFont
+- ImmGetCompositionString
+- ImmGetCompositionWindow
+- ImmGetContext
+- ImmGetConversionList
+- ImmGetConversionStatus
+- ImmGetDefaultIMEWnd
+- ImmGetDescription
+- ImmGetGuideLine
+- ImmGetHotKey
+- ImmGetIMCCLockCount
+- ImmGetIMCCSize
+- ImmGetIMCLockCount
+- ImmGetIMEFileName
+- ImmGetImeMenuItems
+- ImmGetOpenStatus
+- ImmGetProperty
+- ImmGetRegisterWordStyle
+- ImmGetStatusWindowPos
+- ImmGetVirtualKey
+- ImmInstallIME
+- ImmIsIME
+- ImmIsUIMessage
+- ImmLockIMC
+- ImmLockIMCC
+- ImmNotifyIME
+- ImmRegisterWord
+- ImmReleaseContext
+- ImmRequestMessage
+- ImmReSizeIMCC
+- ImmSetCandidateWindow
+- ImmSetCompositionFont
+- ImmSetCompositionString
+- ImmSetCompositionWindow
+- ImmSetConversionStatus
+- ImmSetHotKey
+- ImmSetOpenStatus
+- ImmSetStatusWindowPos
+- ImmShowSoftKeyboard
+- ImmSimulateHotKey
+- ImmUnlockIMC
+- ImmUnlockIMCC
+- ImmUnregisterWord
 
 ## The list of IME functions?
 
-- ImeConfigure function
-- ImeConversionList function
-- ImeDestroy function
-- ImeEnumRegisterWord function
-- ImeEscape function
-- ImeGetImeMenuItems function
-- ImeGetRegisterWordStyle function
-- ImeInquire function
-- ImeProcessKey function
-- ImeRegisterWord function
-- ImeSelect function
-- ImeSetActiveContext function
-- ImeSetCompositionString function
-- ImeToAsciiEx function
-- ImeUnregisterWord function
-- NotifyIME function
+- ImeConfigure
+- ImeConversionList
+- ImeDestroy
+- ImeEnumRegisterWord
+- ImeEscape
+- ImeGetImeMenuItems
+- ImeGetRegisterWordStyle
+- ImeInquire
+- ImeProcessKey
+- ImeRegisterWord
+- ImeSelect
+- ImeSetActiveContext
+- ImeSetCompositionString
+- ImeToAsciiEx
+- ImeUnregisterWord
+- NotifyIME
 
 ## The list of standard IME messages?
 
-- WM_IME_STARTCOMPOSITION message
-- WM_IME_ENDCOMPOSITION message
-- WM_IME_COMPOSITION message
-- WM_IME_SETCONTEXT message
-- WM_IME_NOTIFY message
-- WM_IME_CONTROL message
-- WM_IME_COMPOSITIONFULL message
-- WM_IME_SELECT message
-- WM_IME_CHAR message
-- WM_IME_REQUEST message
-- WM_IME_KEYDOWN message
-- WM_IME_KEYUP message
+- WM_IME_STARTCOMPOSITION
+- WM_IME_ENDCOMPOSITION
+- WM_IME_COMPOSITION
+- WM_IME_SETCONTEXT
+- WM_IME_NOTIFY
+- WM_IME_CONTROL
+- WM_IME_COMPOSITIONFULL
+- WM_IME_SELECT
+- WM_IME_CHAR
+- WM_IME_REQUEST
+- WM_IME_KEYDOWN
+- WM_IME_KEYUP
 
 ## What is trigger of WM_IME_STARTCOMPOSITION?
 ## What is trigger of WM_IME_ENDCOMPOSITION?
