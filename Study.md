@@ -95,7 +95,7 @@ See also:
 ### Windows 10
 
 - CONFIRMED: The application window owns an `"IME"` class window.
-- CONFIRMED: There is an `"MSCTFIME UI"` class window.
+- CONFIRMED: The `"IME"` class window owns the `"MSCTFIME UI"` class window.
 
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
@@ -103,7 +103,7 @@ See also:
 ### Windows 2000 Japanese
 
 - CONFIRMED: The application window owns an `"IME"` class window.
-- CONFIRMED: There is an `"msime98main"` class window.
+- CONFIRMED: The `"IME"` class window owns the `"msime98main"` class window.
 
 ## What does an IME installer?
 
