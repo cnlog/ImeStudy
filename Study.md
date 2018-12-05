@@ -58,18 +58,44 @@ See also:
 
 ### Windows 10
 
-- CONFIRMED: `"MSCTFIME UI"`.
+- CONFIRMED: Its window class is `"MSCTFIME UI"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has CS_IME and CS_GLOBALCLASS class styles.
+- CONFIRMED: It has the window text of `"MSCTFIME UI"`.
+- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
+- CONFIRMED: The thread ID of the `IME` window are different from the thread ID of the application.
+
+See also:
+[images/win10/IME-UI-1.png](images/win10/IME-UI-1.png),
+[images/win10/IME-UI-2.png](images/win10/IME-UI-2.png),
+[images/win10/IME-UI-3.png](images/win10/IME-UI-3.png),
+[images/win10/IME-UI-4.png](images/win10/IME-UI-4.png),
+[images/win10/IME-UI-5.png](images/win10/IME-UI-5.png).
 
 ### Windows 2000 Japanese
 
-- CONFIRMED: `"msime98main"`.
+- CONFIRMED: Its window class is `"msime98main"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has CS_VREDRAW | CS_HREDRAW | CS_IME class styles.
+- CONFIRMED: It has the window text of `"msime98main"`.
+- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
+- CONFIRMED: The thread ID of the `IME` window are different from the thread ID of the application.
+
+See also:
+[images/win2kjp/IME-UI-1.png](images/win2kjp/IME-UI-1.png),
+[images/win2kjp/IME-UI-2.png](images/win2kjp/IME-UI-2.png),
+[images/win2kjp/IME-UI-3.png](images/win2kjp/IME-UI-3.png),
+[images/win2kjp/IME-UI-4.png](images/win2kjp/IME-UI-4.png),
+[images/win2kjp/IME-UI-5.png](images/win2kjp/IME-UI-5.png).
 
 ## How is the window hierarchy?
 
 ### Windows 10
 
 - CONFIRMED: The application window owns an `"IME"` class window.
-- CONFIRMED: The `"IME"` class window owns an `"MSCTFIME UI"` class window.
+- CONFIRMED: There is an `"MSCTFIME UI"` class window.
 
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
@@ -77,7 +103,7 @@ See also:
 ### Windows 2000 Japanese
 
 - CONFIRMED: The application window owns an `"IME"` class window.
-- CONFIRMED: The application window owns an `"msime98main"` class window.
+- CONFIRMED: There is an `"msime98main"` class window.
 
 ## What does an IME installer?
 
