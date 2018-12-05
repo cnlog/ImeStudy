@@ -10,6 +10,14 @@
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
 
+### Windows XP Japanese
+
+- CONFIRMED: There is the IME window class whose window class name is `"IME"`.
+- CONFIRMED: There is the IME UI window class whose window class name is `"imejpstmain81"`.
+
+See also:
+[images/winxpjp/IME-class-6.png](images/winxpjp/IME-class-6.png).
+
 ### Windows 2000 Japanese
 
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
@@ -36,6 +44,23 @@ See also:
 [images/win10/IME-class-3.png](images/win10/IME-class-3.png),
 [images/win10/IME-class-4.png](images/win10/IME-class-4.png),
 [images/win10/IME-class-5.png](images/win10/IME-class-5.png).
+
+### Windows XP Japanese
+
+- CONFIRMED: It has the window class name of `"IME"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has zero class styles.
+- CONFIRMED: It has the window text of `"Default IME"`.
+- CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
+- CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
+
+See also:
+[images/winxpjp/IME-class-1.png](images/winxpjp/IME-class-1.png),
+[images/winxpjp/IME-class-2.png](images/winxpjp/IME-class-2.png),
+[images/winxpjp/IME-class-3.png](images/winxpjp/IME-class-3.png),
+[images/winxpjp/IME-class-4.png](images/winxpjp/IME-class-4.png),
+[images/winxpjp/IME-class-5.png](images/winxpjp/IME-class-5.png).
 
 ### Windows 2000 Japanese
 
@@ -64,7 +89,7 @@ See also:
 - CONFIRMED: It has CS_IME and CS_GLOBALCLASS class styles.
 - CONFIRMED: It has the window text of `"MSCTFIME UI"`.
 - CONFIRMED: The process ID of it is same as the process ID of the application.
-- CONFIRMED: The thread ID of it is different from the thread ID of the application.
+- CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
 See also:
 [images/win10/IME-UI-1.png](images/win10/IME-UI-1.png),
@@ -72,6 +97,23 @@ See also:
 [images/win10/IME-UI-3.png](images/win10/IME-UI-3.png),
 [images/win10/IME-UI-4.png](images/win10/IME-UI-4.png),
 [images/win10/IME-UI-5.png](images/win10/IME-UI-5.png).
+
+### Windows XP Japanese
+
+- CONFIRMED: Its window class is `"imejpstmain81"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has CS_IME | CS_HREDRAW | CS_VREDRAW class styles.
+- CONFIRMED: It has the window text of `"imejpstmain81"`.
+- CONFIRMED: The process ID of it is same as the process ID of the application.
+- CONFIRMED: The thread ID of it is same as the thread ID of the application.
+
+See also:
+[images/winxpjp/IME-UI-1.png](images/winxpjp/IME-UI-1.png),
+[images/winxpjp/IME-UI-2.png](images/winxpjp/IME-UI-2.png),
+[images/winxpjp/IME-UI-3.png](images/winxpjp/IME-UI-3.png),
+[images/winxpjp/IME-UI-4.png](images/winxpjp/IME-UI-4.png),
+[images/winxpjp/IME-UI-5.png](images/winxpjp/IME-UI-5.png).
 
 ### Windows 2000 Japanese
 
@@ -81,7 +123,7 @@ See also:
 - CONFIRMED: It has CS_IME | CS_HREDRAW | CS_VREDRAW class styles.
 - CONFIRMED: It has the window text of `"msime98main"`.
 - CONFIRMED: The process ID of it is same as the process ID of the application.
-- CONFIRMED: The thread ID of it is different from the thread ID of the application.
+- CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
 See also:
 [images/win2kjp/IME-UI-1.png](images/win2kjp/IME-UI-1.png),
@@ -99,6 +141,14 @@ See also:
 
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
+
+### Windows XP Japanese
+
+- CONFIRMED: The application window owns an `"IME"` class window.
+- CONFIRMED: The `"IME"` class window owns the `"imejpstmain81"` class window.
+
+See also:
+[images/winxpjp/IME-class-6.png](images/winxpjp/IME-class-6.png).
 
 ### Windows 2000 Japanese
 
