@@ -63,8 +63,8 @@ See also:
 - CONFIRMED: It has zero extended styles.
 - CONFIRMED: It has CS_IME and CS_GLOBALCLASS class styles.
 - CONFIRMED: It has the window text of `"MSCTFIME UI"`.
-- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
-- CONFIRMED: The thread ID of the `IME` window are different from the thread ID of the application.
+- CONFIRMED: The process ID of it is same as the process ID of the application.
+- CONFIRMED: The thread ID of it is different from the thread ID of the application.
 
 See also:
 [images/win10/IME-UI-1.png](images/win10/IME-UI-1.png),
@@ -78,10 +78,10 @@ See also:
 - CONFIRMED: Its window class is `"msime98main"`.
 - CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
 - CONFIRMED: It has zero extended styles.
-- CONFIRMED: It has CS_VREDRAW | CS_HREDRAW | CS_IME class styles.
+- CONFIRMED: It has CS_IME | CS_HREDRAW | CS_VREDRAW class styles.
 - CONFIRMED: It has the window text of `"msime98main"`.
-- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
-- CONFIRMED: The thread ID of the `IME` window are different from the thread ID of the application.
+- CONFIRMED: The process ID of it is same as the process ID of the application.
+- CONFIRMED: The thread ID of it is different from the thread ID of the application.
 
 See also:
 [images/win2kjp/IME-UI-1.png](images/win2kjp/IME-UI-1.png),
