@@ -10,6 +10,14 @@
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
 
+### Windows 2000 Japanese
+
+- CONFIRMED: There is the IME window class whose window class name is `"IME"`.
+- CONFIRMED: There is the IME UI window class whose window class name is `"msime98main"`.
+
+See also:
+[images/win2kjp/IME-class-1.png](images/win2kjp/IME-class-1.png).
+
 ## What is `"IME"` window class?
 
 ### Windows 10
@@ -29,6 +37,33 @@ See also:
 [images/win10/IME-class-4.png](images/win10/IME-class-4.png),
 [images/win10/IME-class-5.png](images/win10/IME-class-5.png).
 
+### Windows 2000 Japanese
+
+- CONFIRMED: It has the window class name of `"IME"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has zero class styles.
+- CONFIRMED: It has the window text of `"Default IME"`.
+- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
+- CONFIRMED: The the thread ID of the `IME` window are same as the thread ID of the application.
+
+See also:
+[images/win2kjp/IME-class-1.png](images/win2kjp/IME-class-1.png),
+[images/win2kjp/IME-class-2.png](images/win2kjp/IME-class-2.png),
+[images/win2kjp/IME-class-3.png](images/win2kjp/IME-class-3.png),
+[images/win2kjp/IME-class-4.png](images/win2kjp/IME-class-4.png),
+[images/win2kjp/IME-class-5.png](images/win2kjp/IME-class-5.png).
+
+## What is the IME UI window?
+
+### Windows 10
+
+- CONFIRMED: `"MSCTFIME UI"`.
+
+### Windows 2000 Japanese
+
+- CONFIRMED: `"msime98main"`.
+
 ## How is the window hierarchy?
 
 ### Windows 10
@@ -39,9 +74,14 @@ See also:
 See also:
 [images/win10/IME-class-6.png](images/win10/IME-class-6.png).
 
+### Windows 2000 Japanese
+
+- CONFIRMED: The application window owns an `"IME"` class window.
+- CONFIRMED: The application window owns an `"msime98main"` class window.
+
 ## What does an IME installer?
 
-It copys the IME-related files into the system, writes some settings in the registry, and call the ImeInquire function defined in the IME DLL file.
+It copys the IME-related files into the system, writes some settings in the registry, and call the `ImeInquire` function defined in the IME DLL file.
 
 ## What does `DefWindowProc` for IME support?
 
