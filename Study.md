@@ -214,7 +214,7 @@ See also:
 
 ## What does an IME installer?
 
-It copys the IME-related files into the system, writes some settings in the registry, and call the `ImeInquire` function defined in the IME DLL file.
+It copys the IME-related files into the system, writes some settings in the registry, and call the `ImmInstallIME` function.
 
 ## What does `DefWindowProc` for IME support?
 
