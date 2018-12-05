@@ -158,11 +158,12 @@ See REF013 (`mzimeja`).
 ## What is `DefWindowProc`?
 
 `DefWindowProc` is the default window procedure.
+There are two versions of it, as `DefWindowProcA` (ANSI version) and `DefWindowProcW` (Unicode version).
 If the application window doesn't process the window message, then the window message will be processed by `DefWindowProc`.
 
 ## What is `EDIT` control?
 
-The `EDIT` control is a text box, that is a child window whose window class is `"Edit"`.
+The `EDIT` control is a text box, that is a child window whose window class name is `"Edit"`.
 
 ## What is standard IME message?
 
