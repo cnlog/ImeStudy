@@ -7,6 +7,9 @@
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
 - CONFIRMED: There is the IME UI window class whose window class name is `"MSCTFIME UI"`.
 
+See also:
+[images/win10/IME-class-6.png](images/win10/IME-class-6.png).
+
 ## What is `"IME"` window class?
 
 ### Windows 10
@@ -34,7 +37,7 @@ See also:
 - CONFIRMED: The `"IME"` class window owns an `"MSCTFIME UI"` class window.
 
 See also:
-([images/win10/IME-class-6.png](images/win10/IME-class-6.png).
+[images/win10/IME-class-6.png](images/win10/IME-class-6.png).
 
 ## What does an IME installer?
 
