@@ -153,7 +153,57 @@ The IME in Kanji mode automatically converts them into Kanji characters.
 
 ## Where is free Japanese IME?
 
-See `mzimeja`.
+See REF013 (`mzimeja`).
+
+## What is `DefWindowProc`?
+
+`DefWindowProc` is the default window procedure.
+If the application window doesn't process the window message, then the window message will be processed by `DefWindowProc`.
+
+## What is `EDIT` control?
+
+The `EDIT` control is a text box, that is a child window whose window class is `"Edit"`.
+
+## What is standard IME message?
+
+The standard IME messages are the Windows messages whose names begin with `"WM_IME_"`.
+
+## What is MSCTF.dll?
+
+MSCTF.dll is a DLL file that is the core runtime library of Text Services Framework (TSF).
+
+## What is Text Services Framework (TSF)?
+
+TSF is a replacement of IMM32, on Windows XP and later.
+TSF has COM (Component Object Model)-based design that rewrites IMM32.
+Vista+ IME should follow TSF. 
+Old IMM32-based IME is run under "CUAS" emulation layer of TSF.
+
+New IMM32 has `ImmDisableTextFrameService` API to disable TSF in the thread. See REF024.
+
+## What is TIP?
+
+The TSF-based IME of new design is called as TIP (Text Input Processor).
+
+## What is CUAS?
+
+CUAS (Cicero Unaware Application Support) is an emulation layer that connects between the old IMM32-based application and a TSF TIP.
+
+## What is Cicero?
+
+Cicero is the code name of TSF.
+
+## What is `imetip.dll`?
+
+`imetip.dll` is a DLL file that is part of Microsoft IME TIP.
+
+## What is `imjptip.dll`?
+
+`imjptip.dll` is a DLL file that is part of Japanese Microsoft IME TIP.
+
+## What is COM (Component Object Model)?
+
+See REF023.
 
 # Reference
 
@@ -180,3 +230,5 @@ See `mzimeja`.
 - REF020: Wikipedia: Chinese language: https://en.wikipedia.org/wiki/Chinese_language
 - REF021: Wikipedia: Japanese language: https://en.wikipedia.org/wiki/Japanese_language
 - REF022: Wikipedia: Korean language: https://en.wikipedia.org/wiki/Korean_language
+- REF023: Wikipedia: Component Object Model: https://en.wikipedia.org/wiki/Component_Object_Model
+- REF024: Text Services Framework: https://docs.microsoft.com/ja-jp/windows/desktop/TSF/text-services-framework
