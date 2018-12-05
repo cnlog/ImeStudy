@@ -169,10 +169,6 @@ The `EDIT` control is a text box, that is a child window whose window class name
 
 The standard IME messages are the Windows messages whose names begin with `"WM_IME_"`.
 
-## What is MSCTF.dll?
-
-MSCTF.dll is a DLL file that is the core runtime library of Text Services Framework (TSF).
-
 ## What is Text Services Framework (TSF)?
 
 TSF is a replacement of IMM32, on Windows XP and later.
@@ -194,42 +190,6 @@ CUAS (Cicero Unaware Application Support) is an emulation layer that connects be
 
 Cicero is the code name of TSF.
 
-## What is `imetip.dll`?
-
-`imetip.dll` is a DLL file that is part of Microsoft IME TIP.
-
-## What is `imjptip.dll`?
-
-`imjptip.dll` is a DLL file that is part of Japanese Microsoft IME TIP.
-
 ## What is COM (Component Object Model)?
 
 See REF023.
-
-# Reference
-
-- REF000: The Internet Archive: WayBack Machine: https://archive.org/web
-- REF001: WineHQ (free Windows Emulator): https://www.winehq.org
-- REF002: WineHQ Repository: https://github.com/wine-mirror/wine
-- REF003: ReactOS (free Windows-compatible OS): https://www.reactos.org
-- REF004: ReactOS Repository: https://github.com/reactos/reactos
-- REF005: WineHQ IMM32 source: https://github.com/wine-mirror/wine/tree/master/dlls/imm32
-- REF006: WineHQ USER32 source: https://github.com/wine-mirror/wine/tree/master/dlls/user32
-- REF007: ReactOS IMM32 source: https://github.com/reactos/reactos/tree/master/dll/win32/imm32
-- REF008: ReactOS USER32 source: https://github.com/reactos/reactos/tree/master/win32ss/user
-- REF009: Win32 Multilingual IME Application Programming Interface Version 1.41 ([ime-api.pdf](ime-api.pdf))
-- REF010: Win32 Multilingual IME Overview for IME Development Version 1.41 ([ime-overview.pdf](ime-overview.pdf))
-- REF011: IME Hackerz (English): http://www.geocities.jp/katayama_hirofumi_mz/imehackerz/en
-- REF012: IME Hackerz (Japanese): http://www.geocities.jp/katayama_hirofumi_mz/imehackerz/ja
-- REF013: MZ-IME Japanese Input for Windows 2000 (mzimeja): https://github.com/katahiromz/mzimeja
-- REF014: Wikipedia: Hiragana: https://en.wikipedia.org/wiki/Hiragana
-- REF015: Wikipedia: Kanji: https://en.wikipedia.org/wiki/Kanji
-- REF016: Wikipedia: Katakana: https://en.wikipedia.org/wiki/Katakana
-- REF017: Wikipedia: Kanji: https://en.wikipedia.org/wiki/IME
-- REF018: Wikipedia: Input method: https://en.wikipedia.org/wiki/Input_method
-- REF019: Wikipedia: Keyboard layout: https://en.wikipedia.org/wiki/Keyboard_layout
-- REF020: Wikipedia: Chinese language: https://en.wikipedia.org/wiki/Chinese_language
-- REF021: Wikipedia: Japanese language: https://en.wikipedia.org/wiki/Japanese_language
-- REF022: Wikipedia: Korean language: https://en.wikipedia.org/wiki/Korean_language
-- REF023: Wikipedia: Component Object Model: https://en.wikipedia.org/wiki/Component_Object_Model
-- REF024: Text Services Framework: https://docs.microsoft.com/ja-jp/windows/desktop/TSF/text-services-framework

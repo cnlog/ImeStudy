@@ -2,9 +2,43 @@
 
 ## What are the window classes being used for IME support?
 
+### Windows 10
+
+- CONFIRMED: There is the IME window class whose window class name is `"IME"`.
+- CONFIRMED: There is the IME UI window class whose window class name is `"MSCTFIME UI"`.
+
+## What is `"IME"` window class?
+
+### Windows 10
+
+- CONFIRMED: It has the window class name of `"IME"`.
+- CONFIRMED: It has WS_POPUP | WS_DISABLED | WS_CLIPSIBLINGS window styles.
+- CONFIRMED: It has zero extended styles.
+- CONFIRMED: It has zero class styles.
+- CONFIRMED: It has the window text of `"Default IME"`.
+- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
+- CONFIRMED: The the thread ID of the `IME` window are same as the thread ID of the application.
+
+See also:
+([images/win10/IME-class-1.png](images/win10/IME-class-1.png),
+([images/win10/IME-class-2.png](images/win10/IME-class-2.png),
+([images/win10/IME-class-3.png](images/win10/IME-class-3.png),
+([images/win10/IME-class-4.png](images/win10/IME-class-4.png),
+([images/win10/IME-class-5.png](images/win10/IME-class-5.png).
+
 ## How is the window hierarchy?
 
+### Windows 10
+
+- CONFIRMED: The application window owns an `"IME"` class window.
+- CONFIRMED: The `"IME"` class window owns an `"MSCTFIME UI"` class window.
+
+See also:
+([images/win10/IME-class-6.png](images/win10/IME-class-6.png).
+
 ## What does an IME installer?
+
+It copys the IME-related files into the system, writes some settings in the registry, and call the ImeInquire function defined in the IME DLL file.
 
 ## What does `DefWindowProc` for IME support?
 
@@ -136,3 +170,21 @@
 ## What is trigger of ImeToAsciiEx?
 ## What is trigger of ImeUnregisterWord?
 ## What is trigger of NotifyIME?
+
+## What is `imetip.dll`?
+
+`imetip.dll` is a DLL file that is part of Microsoft IME TIP.
+
+- Windows 10 has `imetip.dll` in `C:\Windows\WinSxS\wow64_microsoft-windows-d..me-eashared-coretip_31bf3856ad364e35_10.0.17134.1_none_69cbc7d426615b1b`.
+
+## What is `imjptip.dll`?
+
+`imjptip.dll` is a DLL file that is part of Japanese Microsoft IME TIP.
+
+- Windows 10 has `imjptip.dll` in `C:\Windows\System32\IME\IMEJP`.
+
+## What is `MSCTF.dll`?
+
+`MSCTF.dll` is a DLL file that is the core runtime library of Text Services Framework (TSF).
+
+- Windows 10 has `MSCTF.dll` in `C:\Windows\system32`.
