@@ -27,8 +27,8 @@ See also:
 - CONFIRMED: It has zero extended styles.
 - CONFIRMED: It has zero class styles.
 - CONFIRMED: It has the window text of `"Default IME"`.
-- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
-- CONFIRMED: The the thread ID of the `IME` window are same as the thread ID of the application.
+- CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
+- CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
 See also:
 [images/win10/IME-class-1.png](images/win10/IME-class-1.png),
@@ -44,8 +44,8 @@ See also:
 - CONFIRMED: It has zero extended styles.
 - CONFIRMED: It has zero class styles.
 - CONFIRMED: It has the window text of `"Default IME"`.
-- CONFIRMED: The process ID of the `IME` window are same as the process ID of the application.
-- CONFIRMED: The the thread ID of the `IME` window are same as the thread ID of the application.
+- CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
+- CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
 See also:
 [images/win2kjp/IME-class-1.png](images/win2kjp/IME-class-1.png),
