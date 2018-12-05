@@ -20,11 +20,11 @@
 - CONFIRMED: The the thread ID of the `IME` window are same as the thread ID of the application.
 
 See also:
-([images/win10/IME-class-1.png](images/win10/IME-class-1.png),
-([images/win10/IME-class-2.png](images/win10/IME-class-2.png),
-([images/win10/IME-class-3.png](images/win10/IME-class-3.png),
-([images/win10/IME-class-4.png](images/win10/IME-class-4.png),
-([images/win10/IME-class-5.png](images/win10/IME-class-5.png).
+[images/win10/IME-class-1.png](images/win10/IME-class-1.png),
+[images/win10/IME-class-2.png](images/win10/IME-class-2.png),
+[images/win10/IME-class-3.png](images/win10/IME-class-3.png),
+[images/win10/IME-class-4.png](images/win10/IME-class-4.png),
+[images/win10/IME-class-5.png](images/win10/IME-class-5.png).
 
 ## How is the window hierarchy?
 
