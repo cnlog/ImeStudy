@@ -178,7 +178,7 @@ See also:
 
 ### Windows 10
 
-- CONFIRMED: The GUI application has only one an `"IME"` class window.
+- CONFIRMED: The GUI application has only one `"IME"` class window.
 - CONFIRMED: The window that has focus owns an `"IME"` class window.
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"MSCTFIME UI"` class window.
@@ -189,7 +189,7 @@ See also:
 
 ### Windows 2003
 
-- CONFIRMED: The GUI application has only one an `"IME"` class window.
+- CONFIRMED: The GUI application has only one `"IME"` class window.
 - CONFIRMED: The window that has focus owns an `"IME"` class window.
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"MSCTFIME UI"` class window.
@@ -200,7 +200,7 @@ See also:
 
 ### Windows XP Japanese
 
-- CONFIRMED: The GUI application has only one an `"IME"` class window.
+- CONFIRMED: The GUI application has only one `"IME"` class window.
 - CONFIRMED: The window that has focus owns an `"IME"` class window.
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"imejpstmain81"` class window.
@@ -211,7 +211,7 @@ See also:
 
 ### Windows 2000 Japanese
 
-- CONFIRMED: The GUI application has only one an `"IME"` class window.
+- CONFIRMED: The GUI application has only one `"IME"` class window.
 - NOT CONFIRMED: The window that has focus owns an `"IME"` class window.
 - NOT CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"msime98main"` class window.
