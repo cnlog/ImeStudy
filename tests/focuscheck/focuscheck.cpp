@@ -1,3 +1,4 @@
+// This file is public domain software.
 #include <windows.h>
 #include <stdio.h>
 
