@@ -1,8 +1,8 @@
-﻿# Experiment05
+﻿# Experiment06
 
 ## Purpose
 
-Inspect IME class window of Sakura Editor.
+Inspect IME UI window of Sakura Editor.
 
 ## Platform
 
@@ -28,9 +28,8 @@ Windows 10.
 
 ## Screenshots
 
-- [IME-class-1.png](IME-class-1.png)
-- [IME-class-2.png](IME-class-2.png)
-- [IME-class-3.png](IME-class-3.png)
-- [IME-class-4.png](IME-class-4.png)
-- [IME-class-5.png](IME-class-5.png)
-- [IME-class-6.png](IME-class-6.png)
+- [win10/IME-UI-1.png](win10/IME-UI-1.png)
+- [win10/IME-UI-2.png](win10/IME-UI-2.png)
+- [win10/IME-UI-3.png](win10/IME-UI-3.png)
+- [win10/IME-UI-4.png](win10/IME-UI-4.png)
+- [win10/IME-UI-5.png](win10/IME-UI-5.png)

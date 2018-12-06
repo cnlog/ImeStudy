@@ -29,4 +29,4 @@ Windows 2003.
 
 ## Screenshots
 
-- [IME-UI-7.png](IME-UI-7.png)
+- [win2k3/IME-UI-7.png](win2k3/IME-UI-7.png)

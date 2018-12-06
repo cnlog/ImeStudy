@@ -29,8 +29,8 @@ Windows 2000 Japanese.
 
 ## Screenshots
 
-- [IME-class-1.png](IME-class-1.png)
-- [IME-class-2.png](IME-class-2.png)
-- [IME-class-3.png](IME-class-3.png)
-- [IME-class-4.png](IME-class-4.png)
-- [IME-class-5.png](IME-class-5.png)
+- [win2kjp/IME-class-1.png](win2kjp/IME-class-1.png)
+- [win2kjp/IME-class-2.png](win2kjp/IME-class-2.png)
+- [win2kjp/IME-class-3.png](win2kjp/IME-class-3.png)
+- [win2kjp/IME-class-4.png](win2kjp/IME-class-4.png)
+- [win2kjp/IME-class-5.png](win2kjp/IME-class-5.png)

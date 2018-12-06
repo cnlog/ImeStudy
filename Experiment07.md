@@ -1,8 +1,8 @@
-﻿# Experiment08
+﻿# Experiment07
 
 ## Purpose
 
-Inspect IME UI window of Notepad.
+Inspect IME class window of Notepad.
 
 ## Platform
 
@@ -27,8 +27,9 @@ Windows XP Japanese.
 
 ## Screenshots
 
-- [IME-UI-1.png](IME-UI-1.png)
-- [IME-UI-2.png](IME-UI-2.png)
-- [IME-UI-3.png](IME-UI-3.png)
-- [IME-UI-4.png](IME-UI-4.png)
-- [IME-UI-5.png](IME-UI-5.png)
+- [winxpjp/IME-class-1.png](winxpjp/IME-class-1.png)
+- [winxpjp/IME-class-2.png](winxpjp/IME-class-2.png)
+- [winxpjp/IME-class-3.png](winxpjp/IME-class-3.png)
+- [winxpjp/IME-class-4.png](winxpjp/IME-class-4.png)
+- [winxpjp/IME-class-5.png](winxpjp/IME-class-5.png)
+- [winxpjp/IME-class-6.png](winxpjp/IME-class-6.png)

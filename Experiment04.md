@@ -29,8 +29,8 @@ Windows 2000 Japanese.
 
 ## Screenshots
 
-- [IME-UI-1.png](IME-UI-1.png)
-- [IME-UI-2.png](IME-UI-2.png)
-- [IME-UI-3.png](IME-UI-3.png)
-- [IME-UI-4.png](IME-UI-4.png)
-- [IME-UI-5.png](IME-UI-5.png)
+- [win2kjp/IME-UI-1.png](win2kjp/IME-UI-1.png)
+- [win2kjp/IME-UI-2.png](win2kjp/IME-UI-2.png)
+- [win2kjp/IME-UI-3.png](win2kjp/IME-UI-3.png)
+- [win2kjp/IME-UI-4.png](win2kjp/IME-UI-4.png)
+- [win2kjp/IME-UI-5.png](win2kjp/IME-UI-5.png)

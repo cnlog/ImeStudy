@@ -29,8 +29,8 @@ Windows 2003.
 
 ## Screenshots
 
-- [IME-UI-1.png](IME-UI-1.png)
-- [IME-UI-2.png](IME-UI-2.png)
-- [IME-UI-3.png](IME-UI-3.png)
-- [IME-UI-4.png](IME-UI-4.png)
-- [IME-UI-5.png](IME-UI-5.png)
+- [win2k3/IME-UI-1.png](win2k3/IME-UI-1.png)
+- [win2k3/IME-UI-2.png](win2k3/IME-UI-2.png)
+- [win2k3/IME-UI-3.png](win2k3/IME-UI-3.png)
+- [win2k3/IME-UI-4.png](win2k3/IME-UI-4.png)
+- [win2k3/IME-UI-5.png](win2k3/IME-UI-5.png)

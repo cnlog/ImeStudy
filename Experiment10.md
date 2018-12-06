@@ -26,4 +26,4 @@ Windows 2003.
 
 ## Screenshots
 
-- [IME-class-7.png](IME-UI-7.png)
+- [win10/IME-class-7.png](win10/IME-UI-7.png)
