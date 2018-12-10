@@ -23,6 +23,7 @@ struct ENUM_PARAM
 {
     DWORD pid;
     HWND hwndIme;
+    HWND hwndImeUI;
 };
 
 static BOOL CALLBACK FindImeProc(HWND hwnd, LPARAM lParam)
@@ -119,7 +120,9 @@ public:
     {
         m_edt1 = GetDlgItem(hwnd, edt1);
         m_ime = FindImeWindow(hwnd);
+        // NOTE: We cannot access the IME UI window.
 
+        printf("main:%p\n", (void *)m_hwnd);
         printf("m_edt1:%p\n", (void *)m_edt1);
         printf("m_ime:%p\n", (void *)m_ime);
 

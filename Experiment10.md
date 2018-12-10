@@ -17,12 +17,12 @@ Windows 2003.
 
 - HWND ????????, window class name "#32770", window text "åüçı" ("Find" in Japanese)
 - HWND 00D80378, window class name "IME", window text "Default IME"
-- HWND 004909B0, window class name "MSCTFIME", window text "M???..."
+- HWND 004909B0, window class name "MSCTFIME UI", window text "M???..."
 
 ## Window Hierarchy
 
 - HWND 00D80378 ("IME") is owned by 'Find' dialog.
-- HWND 004909B0 ("MSCTFIME") is owned by HWND 00D80378.
+- HWND 004909B0 ("MSCTFIME UI") is owned by HWND 00D80378.
 
 ## Screenshots
 
