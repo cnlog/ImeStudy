@@ -15,13 +15,13 @@ Windows 10.
 ## Window Handles
 
 - HWND 002008B0, window class name "#32770"
-- HWND 008B06FC, window class name "IME"
 - HWND 007A08D6, window class name "Edit"
+- HWND 008B06FC, window class name "IME"
 
 ## Work
 
 - Build [tests/MsgDump](tests/MsgDump).
-- Execute "MsgDump.exe > MsgDump-w10.txt" from Command Prompt.
+- Execute "MyProject.exe > MsgDump-w10.txt" from Command Prompt.
 
 ## The log
 
