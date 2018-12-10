@@ -2,7 +2,7 @@
 
 ## Purpose
 
-Inspect IME messages.
+Inspect IME messages without input.
 
 ## Platform
 
