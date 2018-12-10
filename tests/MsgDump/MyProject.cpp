@@ -118,6 +118,8 @@ public:
 
     BOOL OnInitDialog(HWND hwnd, HWND hwndFocus, LPARAM lParam)
     {
+        SetCursorPos(0, 0);
+
         m_edt1 = GetDlgItem(hwnd, edt1);
         m_ime = FindImeWindow(hwnd);
         // NOTE: We cannot access the IME UI window.
@@ -128,6 +130,8 @@ public:
 
         g_fnEditProcOld = SubclassWindow(m_edt1, EditWrapWindowProc);
         g_fnImeProcOld = SubclassWindow(m_ime, ImeWrapWindowProc);
+
+        SetTimer(hwnd, 999, 2000, NULL);
         return TRUE;
     }
 
@@ -140,6 +144,11 @@ public:
             DestroyWindow(hwnd);
             break;
         }
+    }
+
+    void OnTimer(HWND hwnd, UINT id)
+    {
+        PostMessageDx(WM_COMMAND, IDOK);
     }
 
     void OnDestroy(HWND hwnd)
@@ -156,6 +165,7 @@ public:
         {
         HANDLE_MSG(hwnd, WM_INITDIALOG, OnInitDialog);
         HANDLE_MSG(hwnd, WM_COMMAND, OnCommand);
+        HANDLE_MSG(hwnd, WM_TIMER, OnTimer);
         HANDLE_MSG(hwnd, WM_DESTROY, OnDestroy);
         default:
             return DefaultProcDx();
