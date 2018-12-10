@@ -14,7 +14,7 @@ Windows 10.
 
 ## Window Handles
 
-- HWND 002008B0, window class name "MZC4 MMainWnd Class"
+- HWND 002008B0, window class name "#32770"
 - HWND 008B06FC, window class name "IME"
 - HWND 007A08D6, window class name "Edit"
 
