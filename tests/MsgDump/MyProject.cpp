@@ -11,7 +11,7 @@ void my_tprintf(const TCHAR *fmt, ...)
     va_list va;
     va_start(va, fmt);
     StringCchVPrintf(szText, 512, fmt, va);
-    _fputts(szText, stdout);
+    fwrite(szText, lstrlen(szText) * sizeof(TCHAR), 1, stdout);
     va_end(va);
 }
 
