@@ -65,9 +65,13 @@ WNDPROC g_fnEditProcOld = NULL;
 LRESULT CALLBACK
 EditWrapWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-    g_prefix = TEXT("EDIT:");
+    if (InSendMessage())
+        g_prefix = TEXT("EDIT:S: ");
+    else
+        g_prefix = TEXT("EDIT:P: ");
     MD_msgdump(hwnd, uMsg, wParam, lParam);
     LRESULT lResult = CallWindowProc(g_fnEditProcOld, hwnd, uMsg, wParam, lParam);
+    g_prefix = TEXT("EDIT:R: ");
     MD_msgresult(hwnd, uMsg, wParam, lParam, lResult);
     return lResult;
 }
@@ -77,14 +81,18 @@ WNDPROC g_fnImeProcOld = NULL;
 LRESULT CALLBACK
 ImeWrapWindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
 {
-    g_prefix = TEXT("IME:");
+    if (InSendMessage())
+        g_prefix = TEXT("IME:S: ");
+    else
+        g_prefix = TEXT("IME:P: ");
     MD_msgdump(hwnd, uMsg, wParam, lParam);
     LRESULT lResult = CallWindowProc(g_fnImeProcOld, hwnd, uMsg, wParam, lParam);
+    g_prefix = TEXT("IME:R: ");
     MD_msgresult(hwnd, uMsg, wParam, lParam, lResult);
     return lResult;
 }
 
-class MMainWnd : public MDialogBase
+class MMainWnd : public MWindowBase
 {
 public:
     HINSTANCE   m_hInst;        // the instance handle
@@ -95,7 +103,7 @@ public:
     HWND        m_ime;
 
     MMainWnd(HINSTANCE hInst)
-        : MDialogBase(1), m_hInst(hInst),
+        : m_hInst(hInst),
           m_hIcon(NULL), m_hIconSm(NULL), m_hAccel(NULL)
     {
     }
@@ -116,11 +124,14 @@ public:
         wcx.hIconSm = m_hIconSm;
     }
 
-    BOOL OnInitDialog(HWND hwnd, HWND hwndFocus, LPARAM lParam)
+    BOOL OnCreate(HWND hwnd, LPCREATESTRUCT lpCreateStruct)
     {
         SetCursorPos(0, 0);
 
-        m_edt1 = GetDlgItem(hwnd, edt1);
+        m_edt1 = CreateWindow(TEXT("EDIT"), NULL,
+            WS_CHILD | WS_VISIBLE | WS_BORDER | ES_MULTILINE,
+            0, 0, 100, 100, hwnd, (HMENU)edt1, m_hInst, NULL);
+
         m_ime = FindImeWindow(hwnd);
         // NOTE: We cannot access the IME UI window.
 
@@ -156,14 +167,12 @@ public:
         ::PostQuitMessage(0);
     }
 
-    virtual INT_PTR CALLBACK
-    DialogProcDx(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+    virtual LRESULT CALLBACK
+    RealWindowProcDx(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
-        g_prefix = TEXT("MMainWnd:");
-        MD_msgdump(hwnd, uMsg, wParam, lParam);
         switch (uMsg)
         {
-        HANDLE_MSG(hwnd, WM_INITDIALOG, OnInitDialog);
+        HANDLE_MSG(hwnd, WM_CREATE, OnCreate);
         HANDLE_MSG(hwnd, WM_COMMAND, OnCommand);
         HANDLE_MSG(hwnd, WM_TIMER, OnTimer);
         HANDLE_MSG(hwnd, WM_DESTROY, OnDestroy);
@@ -172,20 +181,35 @@ public:
         }
     }
 
+    virtual LRESULT CALLBACK
+    WindowProcDx(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam)
+    {
+        if (InSendMessage())
+            g_prefix = TEXT("MMainWnd:S: ");
+        else
+            g_prefix = TEXT("MMainWnd:P: ");
+        MD_msgdump(hwnd, uMsg, wParam, lParam);
+        LRESULT lResult = RealWindowProcDx(hwnd, uMsg, wParam, lParam);
+        g_prefix = TEXT("MMainWnd:R: ");
+        MD_msgresult(hwnd, uMsg, wParam, lParam, lResult);
+        return lResult;
+    }
+
     BOOL StartDx(INT nCmdShow)
     {
         m_hIcon = LoadIconDx(1);
         m_hIconSm = LoadSmallIconDx(1);
         m_hAccel = ::LoadAccelerators(m_hInst, MAKEINTRESOURCE(1));
 
-        if (CreateDialogDx(NULL))
+        if (!CreateWindowDx(NULL, TEXT("MyProject")))
         {
-            ShowWindow(m_hwnd, nCmdShow);
-            UpdateWindow(m_hwnd);
-            return TRUE;
+            MessageBoxA(NULL, "CreateWindowDx", NULL, MB_ICONERROR);
+            return FALSE;
         }
 
-        return FALSE;
+        ShowWindow(m_hwnd, nCmdShow);
+        UpdateWindow(m_hwnd);
+        return TRUE;
     }
 
     INT RunDx()
