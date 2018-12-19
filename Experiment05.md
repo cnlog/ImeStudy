@@ -13,6 +13,7 @@ Windows 10.
 - WinSpy++
 - MessageSpy
 - Sakura Editor
+- [tests/focuscheck](tests/focuscheck)
 
 ## Window Handles
 

@@ -12,6 +12,7 @@ Windows 2003.
 
 - WinSpy++
 - MessageSpy
+- [tests/focuscheck](tests/focuscheck)
 
 ## Window Handles
 

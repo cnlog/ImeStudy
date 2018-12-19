@@ -12,6 +12,7 @@ Windows XP Japanese.
 
 - WinSpy++
 - MessageSpy
+- [tests/focuscheck](tests/focuscheck)
 
 ## Window Handles
 

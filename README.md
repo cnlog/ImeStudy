@@ -193,3 +193,7 @@ Cicero is the code name of TSF.
 ## What is COM (Component Object Model)?
 
 See REF023.
+
+## What does an IME installer?
+
+It copys the IME-related files into the system, writes some settings in the registry, and call the `ImmInstallIME` function.

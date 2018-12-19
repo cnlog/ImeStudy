@@ -166,10 +166,6 @@ Evidence: [Experiment07.md](Experiment07.md).
 - NOT CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"msime98main"` class window.
 
-## What does an IME installer?
-
-It copys the IME-related files into the system, writes some settings in the registry, and call the `ImmInstallIME` function.
-
 ## What does `DefWindowProc` for IME support?
 
 ## The list of IMM functions?
