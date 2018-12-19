@@ -7,32 +7,28 @@
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
 - CONFIRMED: There is the IME UI window class whose window class name is `"MSCTFIME UI"`.
 
-See also:
-[win10/IME-class-6.png](win10/IME-class-6.png).
+Evidence: [Experiment05.md](Experiment05.md).
 
 ### Windows 2003
 
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
 - CONFIRMED: There is the IME UI window class whose window class name is `"MSCTFIME UI"`.
 
-See also:
-[win2k3/IME-class-6.png](win2k3/IME-class-6.png).
+Evidence: [Experiment01.md](Experiment01.md).
 
 ### Windows XP Japanese
 
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
 - CONFIRMED: There is the IME UI window class whose window class name is `"imejpstmain81"`.
 
-See also:
-[winxpjp/IME-class-6.png](winxpjp/IME-class-6.png).
+Evidence: [Experiment07.md](Experiment07.md).
 
 ### Windows 2000 Japanese
 
 - CONFIRMED: There is the IME window class whose window class name is `"IME"`.
 - CONFIRMED: There is the IME UI window class whose window class name is `"msime98main"`.
 
-See also:
-[win2kjp/IME-class-1.png](win2kjp/IME-class-1.png).
+Evidence: [Experiment03.md](Experiment03.md).
 
 ## What is `"IME"` window class?
 
@@ -46,12 +42,7 @@ See also:
 - CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
 - CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
-See also:
-[win10/IME-class-1.png](win10/IME-class-1.png),
-[win10/IME-class-2.png](win10/IME-class-2.png),
-[win10/IME-class-3.png](win10/IME-class-3.png),
-[win10/IME-class-4.png](win10/IME-class-4.png),
-[win10/IME-class-5.png](win10/IME-class-5.png).
+Evidence: [Experiment05.md](Experiment05.md).
 
 ### Windows 2003
 
@@ -63,12 +54,7 @@ See also:
 - CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
 - CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
-See also:
-[win2k3/IME-class-1.png](win2k3/IME-class-1.png),
-[win2k3/IME-class-2.png](win2k3/IME-class-2.png),
-[win2k3/IME-class-3.png](win2k3/IME-class-3.png),
-[win2k3/IME-class-4.png](win2k3/IME-class-4.png),
-[win2k3/IME-class-5.png](win2k3/IME-class-5.png).
+Evidence: [Experiment01.md](Experiment01.md).
 
 ### Windows XP Japanese
 
@@ -80,12 +66,7 @@ See also:
 - CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
 - CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
-See also:
-[winxpjp/IME-class-1.png](winxpjp/IME-class-1.png),
-[winxpjp/IME-class-2.png](winxpjp/IME-class-2.png),
-[winxpjp/IME-class-3.png](winxpjp/IME-class-3.png),
-[winxpjp/IME-class-4.png](winxpjp/IME-class-4.png),
-[winxpjp/IME-class-5.png](winxpjp/IME-class-5.png).
+Evidence: [Experiment07.md](Experiment07.md).
 
 ### Windows 2000 Japanese
 
@@ -97,12 +78,7 @@ See also:
 - CONFIRMED: The process ID of the `IME` window is same as the process ID of the application.
 - CONFIRMED: The the thread ID of the `IME` window is same as the thread ID of the application.
 
-See also:
-[win2kjp/IME-class-1.png](win2kjp/IME-class-1.png),
-[win2kjp/IME-class-2.png](win2kjp/IME-class-2.png),
-[win2kjp/IME-class-3.png](win2kjp/IME-class-3.png),
-[win2kjp/IME-class-4.png](win2kjp/IME-class-4.png),
-[win2kjp/IME-class-5.png](win2kjp/IME-class-5.png).
+Evidence: [Experiment03.md](Experiment03.md).
 
 ## What is the IME UI window?
 
@@ -116,12 +92,7 @@ See also:
 - CONFIRMED: The process ID of it is same as the process ID of the application.
 - CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
-See also:
-[win10/IME-UI-1.png](win10/IME-UI-1.png),
-[win10/IME-UI-2.png](win10/IME-UI-2.png),
-[win10/IME-UI-3.png](win10/IME-UI-3.png),
-[win10/IME-UI-4.png](win10/IME-UI-4.png),
-[win10/IME-UI-5.png](win10/IME-UI-5.png).
+Evidence: [Experiment06.md](Experiment06.md).
 
 ### Windows 2003
 
@@ -133,12 +104,7 @@ See also:
 - CONFIRMED: The process ID of it is same as the process ID of the application.
 - CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
-See also:
-[win2k3/IME-UI-1.png](win2k3/IME-UI-1.png),
-[win2k3/IME-UI-2.png](win2k3/IME-UI-2.png),
-[win2k3/IME-UI-3.png](win2k3/IME-UI-3.png),
-[win2k3/IME-UI-4.png](win2k3/IME-UI-4.png),
-[win2k3/IME-UI-5.png](win2k3/IME-UI-5.png).
+Evidence: [Experiment02.md](Experiment02.md).
 
 ### Windows XP Japanese
 
@@ -150,12 +116,7 @@ See also:
 - CONFIRMED: The process ID of it is same as the process ID of the application.
 - CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
-See also:
-[winxpjp/IME-UI-1.png](winxpjp/IME-UI-1.png),
-[winxpjp/IME-UI-2.png](winxpjp/IME-UI-2.png),
-[winxpjp/IME-UI-3.png](winxpjp/IME-UI-3.png),
-[winxpjp/IME-UI-4.png](winxpjp/IME-UI-4.png),
-[winxpjp/IME-UI-5.png](winxpjp/IME-UI-5.png).
+Evidence: [Experiment08.md](Experiment08.md).
 
 ### Windows 2000 Japanese
 
@@ -167,12 +128,7 @@ See also:
 - CONFIRMED: The process ID of it is same as the process ID of the application.
 - CONFIRMED: The thread ID of it is same as the thread ID of the application.
 
-See also:
-[win2kjp/IME-UI-1.png](win2kjp/IME-UI-1.png),
-[win2kjp/IME-UI-2.png](win2kjp/IME-UI-2.png),
-[win2kjp/IME-UI-3.png](win2kjp/IME-UI-3.png),
-[win2kjp/IME-UI-4.png](win2kjp/IME-UI-4.png),
-[win2kjp/IME-UI-5.png](win2kjp/IME-UI-5.png).
+Evidence: [Experiment04.md](Experiment04.md).
 
 ## How is the window hierarchy?
 
@@ -183,9 +139,7 @@ See also:
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"MSCTFIME UI"` class window.
 
-See also:
-[win10/IME-class-6.png](win10/IME-class-6.png),
-[win10/IME-class-7.png](win10/IME-class-7.png).
+Evidence: [Experiment05.md](Experiment05.md).
 
 ### Windows 2003
 
@@ -194,9 +148,7 @@ See also:
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"MSCTFIME UI"` class window.
 
-See also:
-[win2k3/IME-class-6.png](win2k3/IME-class-6.png),
-[win2k3/IME-class-7.png](win2k3/IME-class-7.png).
+Evidence: [Experiment01.md](Experiment01.md).
 
 ### Windows XP Japanese
 
@@ -205,9 +157,7 @@ See also:
 - CONFIRMED: If the focus was moved, then the application's `"IME"` window will be also moved.
 - CONFIRMED: The `"IME"` class window owns the `"imejpstmain81"` class window.
 
-See also:
-[winxpjp/IME-class-6.png](winxpjp/IME-class-6.png),
-[winxpjp/IME-class-7.png](winxpjp/IME-class-7.png).
+Evidence: [Experiment07.md](Experiment07.md).
 
 ### Windows 2000 Japanese
 
